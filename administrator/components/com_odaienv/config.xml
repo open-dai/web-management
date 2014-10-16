@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+   <params>
+   		<param name="endpoint" type="text" default="HTTP1234" label="CloudStack API endpoint" description="CloudStack API endpoint" />
+		<param name="domid" type="text" default="DOM1234" label="Domain ID" description="User CloudStack's domain ID" />
+		<param name="zoneid" type="text" default="ZONE1234" label="Zone ID" description="User CloudStack's zone ID" />
+		<param name="api_key" type="text" default="API1234" label="API key" description="This is the CloudStack API key" />
+		<param name="secret_key" type="text" default="SEC1234" label="Secret key" description="This is the CloudStack Secret key" />
+		<param name="jboss_user" type="text" default="JBU1234" label="JBoss user" description="The admin user for the JBoss console" />
+		<param name="jboss_pwd" type="text" default="JBP1234" label="JBoss password" description="The password for the JBoss user" />
+		<param name="jboss_dom" type="text" default="JBD1234" label="JBoss domain" description="The domain mode of the JBoss application server" />
+		<param name="jboss_srg" type="text" default="JBS1234" label="JBoss server group" description="The JBoss server group where you want to deploy" />
+		<param name="file_cript_key" type="text" default="FCK1234" label="Encryption key" description="Key used to crypt files" />
+   </params>
+   
+	<fieldset
+		name="Common"
+		label="Common"
+		description="Common">
+		<field name="endpoint" type="text" default="HTTP1234" label="CloudStack API endpoint" description="CloudStack API endpoint"  />
+		<field name="domid" type="text" default="DOM1234" label="Domain ID" description="User CloudStack's domain ID"  />
+		<field name="zoneid" type="text" default="ZONE1234" label="Zone ID" description="User CloudStack's zone ID"  />
+		<field name="api_key" type="text" default="API1234" label="API key" description="This is the CloudStack API key"  />
+		<field name="secret_key" type="text" default="SEC1234" label="Secret key" description="This is the CloudStack Secret key"  />
+		<field name="jboss_user" type="text" default="JBU1234" label="JBoss user" description="The admin user for the JBoss console"  />
+		<field name="jboss_pwd" type="text" default="JBP1234" label="JBoss password" description="The password for the JBoss user" />
+		<field name="jboss_dom" type="list" default="domain" label="JBoss domain" description="The domain mode of the JBoss application server">
+			<option value="standalone">Standalone</option>
+			<option value="domain">Domain</option>
+		</field>
+		<field name="jboss_srg" type="text" default="JBS1234" label="JBoss server group" description="The JBoss server group where you want to deploy" />
+		<field name="file_cript_key" type="text" default="FCK1234" label="Encryption key" description="Key used to crypt files" />
+	</fieldset>		   
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_odaienv"
+			section="component" />
+	</fieldset>	
+</config>

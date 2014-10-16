@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade" version="1.6">
+	<name>Odaienv</name>
+	<creationDate>2014-07-07</creationDate>
+	<author>Luca Gioppo</author>
+	<authorEmail>info@example.com</authorEmail>
+	<authorUrl>http://www.example.com</authorUrl>
+	<copyright>Copyright (C) 2014 Luca Gioppo. All rights reserved.</copyright>	
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0</version>
+	<description></description>
+	<scriptfile>script.php</scriptfile>
+	<installfile></installfile>
+	<uninstallfile></uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+			<file driver="postgresql" charset="utf8">sql/install.postgresql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+			<file driver="postgresql" charset="utf8">sql/uninstall.postgresql.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+			<filename>index.html</filename>			
+	</files>	
+	<administration>
+		<menu link="index.php?option=com_odaienv">Odaienv</menu>
+
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>odaienv.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>access.xml</filename>			
+			<folder>assets</folder>
+			<folder>elements</folder>				
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>manifest</folder>			
+			<folder>models</folder>
+			<folder>sql</folder>			
+			<folder>tables</folder>
+			<folder>files</folder>
+			<folder>views</folder>									
+		</files>	
+        <languages folder="admin">
+        	<language tag="en-GB">language/en-GB.com_odaienv.ini</language>
+            <language tag="de-DE">language/de-DE.com_odaienv.ini</language>
+        	<language tag="en-GB">language/en-GB.com_odaienv.sys.ini</language>
+            <language tag="de-DE">language/de-DE.com_odaienv.sys.ini</language>                           
+		</languages>		
+	</administration>
+</extension>

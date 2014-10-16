@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			required="true"
+			readonly="true"/>							
+															
+		<field
+			name="vdb_id"
+			type="hidden"
+			default="0"
+			required="true"
+			readonly="true"/>							
+
+		<field
+			id="name"
+			name="name"
+			type="text"
+			required="true"
+			label="Name"
+			description="name_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+		<field
+			id="jndiname"
+			name="jndiname"
+			type="text"
+			required="true"
+			label="jndiname"
+			description="jndiname_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="drivername"
+			name="drivername"
+			type="text"
+			required="true"
+			label="Driver Name"
+			description="drivername_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="driverclass"
+			name="driverclass"
+			type="text"
+			required="true"
+			label="Driver Class"
+			description="driverclass_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="connectionurl"
+			name="connectionurl"
+			type="text"
+			required="true"
+			label="Connection URL"
+			description="connectionurl_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="user"
+			name="user"
+			type="text"
+			required="true"
+			label="User"
+			description="user_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="password"
+			name="password"
+			type="text"
+			required="true"
+			label="password"
+			description="password_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="state"
+			name="state"
+			type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JField_Published_Label"
+			description="JField_Published_Desc">
+			<option
+				value="1">
+				JOption_Published</option>
+			<option
+				value="0">
+				JOption_UnPublished</option>
+			<option
+				value="-1">
+				JOption_Archived</option>
+			<option
+				value="-2">
+				JOption_Trashed</option>
+		</field>
+                          		
+	</fields>	
+		
+</form>	
